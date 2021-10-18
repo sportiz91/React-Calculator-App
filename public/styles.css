@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+*:root {
+  --bg-color: burlywood;
+  --wrapper-bg-color: black;
+  --ac-percentage-minus-btn-color: gray;
+  --operand-btn-color: orange;
+  --number-btn-color: rgb(54, 52, 52);
+  --operand-ac-percentage-minus-btn-hover: white;
+  --number-btn-hover: gray;
+  --ac-percentage-minus-letter-color: black;
+  --number-letter-color: white;
+  --display-bg-color: rgb(54, 52, 52);
+  --shadow: 7px 7px 5px 0 rgb(50 50 50 / 75%);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  min-height: 100vh;
+  color: var(--number-letter-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  min-height: 80vh;
+  background-color: var(--wrapper-bg-color);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: minmax(1fr, auto) repeat(5, 1fr); */
+  grid-template-rows: minmax(114.094px, auto) repeat(5, 111.09px);
+  grid-gap: 1rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+}
+
+.display {
+  grid-column: 1 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 5rem;
+  max-width: 449.81px;
+  word-break: break-all;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 1.75rem;
+  border-radius: 50%;
+  border: 0;
+  color: var(--number-letter-color);
+  cursor: pointer;
+}
+
+.zero.btn {
+  grid-column: span 2;
+  border-radius: 1rem;
+}
+
+.operand {
+  background-color: var(--operand-btn-color);
+}
+
+.number,
+.equal {
+  background-color: var(--number-btn-color);
+}
+
+.ac,
+.percentage,
+.minus {
+  background-color: var(--ac-percentage-minus-btn-color);
+  color: var(--ac-percentage-minus-letter-color);
+}
+
+.ac:hover,
+.percentage:hover,
+.minus:hover {
+  background-color: var(--operand-ac-percentage-minus-btn-hover);
+}
+
+.operand:hover {
+  background-color: var(--operand-ac-percentage-minus-btn-hover);
+  color: var(--operand-btn-color);
+}
+
+.number:hover,
+.equal:hover {
+  background-color: var(--number-btn-hover);
+}
