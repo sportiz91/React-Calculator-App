@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import NumberFormat from "react-number-format";
+import keys from "./components/references";
+import MyButton from "./components/buttons";
 
 function App() {
   //State Variables:
@@ -131,7 +133,18 @@ function App() {
         />
       </div>
 
-      <button className="ac btn" onClick={handleAllClear}>
+      {keys.map((key) => {
+        return (
+          <MyButton
+            myClass={key.class}
+            myFunction={eval(key.function)}
+            key={key.id}
+            id={key.id}
+          />
+        );
+      })}
+
+      {/* <button className="ac btn" onClick={handleAllClear}>
         AC
       </button>
       <button className="percentage btn" onClick={applyPercentage}>
@@ -195,7 +208,7 @@ function App() {
       </button>
       <button className="equal btn" onClick={equals}>
         =
-      </button>
+      </button> */}
     </div>
   );
 }

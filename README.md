@@ -19,7 +19,6 @@ This is my second App built with React. It's done with simple `create-react-app`
 
 ## Next Steps
 
-1. Define smaller components.
 1. Mobile view.
 1. Host in Heroku.
 1. Update files.
