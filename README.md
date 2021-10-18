@@ -1,6 +1,6 @@
 ## React Calculator App
 
-This is my second App built with React. It's done with simple `create-react-app`. For more information about React checkout docs: [React Docs](https://es.reactjs.org/docs/getting-started.html).
+This is my second App built with React. It's done with simple `create-react-app`. For more information about React checkout docs: [React Docs](https://es.reactjs.org/docs/getting-started.html). An example of this App can be found in: https://react-calculator-santi.herokuapp.com/
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@ This is my second App built with React. It's done with simple `create-react-app`
 
 ## Next Steps
 
-1. Host in Heroku.
+None! Everything is done :)
 
 ## Thanks
 
