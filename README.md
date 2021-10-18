@@ -12,7 +12,7 @@ This is my second App built with React. It's done with simple `create-react-app`
 ## Quick Start
 
 1. Init a new repo: `git init`.
-1. Clone the repo: `git clone TBD`.
+1. Clone the repo: `git clone https://github.com/sportiz91/React-Calculator-App.git`.
 1. CD over `react-app-santi` folder.
 1. Install with npm: `npm install`.
 1. Run in locally on your machine: `npm start`.
